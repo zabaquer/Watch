@@ -19,5 +19,43 @@ span {
   background: #fd0;
 }
 </style>
-<h1> Hello </h1><br>
-<h2>(a realtime html + css editor)</h2>
+<!-- TradingView Widget BEGIN -->
+<div class="tradingview-widget-container">
+  <div class="tradingview-widget-container__widget"></div>
+  <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com" rel="noopener" target="_blank"><span class="blue-text">Ticker Tape</span></a> by TradingView</div>
+  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
+  {
+  "symbols": [
+    {
+      "proName": "OANDA:SPX500USD",
+      "title": "S&P 500"
+    },
+    {
+      "description": "VIX",
+      "proName": "CBOE:VIX"
+    },
+    {
+      "description": "Russell 2000",
+      "proName": "RUSSELL:RUT"
+    },
+    {
+      "description": "General Electric ",
+      "proName": "NYSE:GE"
+    },
+    {
+      "description": "Illumina",
+      "proName": "NASDAQ:ILMN"
+    },
+    {
+      "description": "Southwest Airlines",
+      "proName": "NYSE:LUV"
+    }
+  ],
+  "colorTheme": "dark",
+  "isTransparent": false,
+  "displayMode": "compact",
+  "locale": "en"
+}
+  </script>
+</div>
+<!-- TradingView Widget END -->
